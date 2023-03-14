@@ -5,21 +5,21 @@
         static void Main(string[] args)
         {
             bool continuar = true;
+            char posicao;
+            int x = 0, y = 0;
+
+            Console.WriteLine("--- Let's begin our exploration in Mars ---");
+            Console.WriteLine("Digite a posição inicial do nosso robô: \n Sendo dois dígitos e uma letra. \n Os dígitos são de 0 a 5. \n Cada letra representa um ponto cardeal: \n N - Norte.\n S - Sul. \n O - Oeste. \n L - Leste. \n");
+            Console.WriteLine("Digite o valor do primeiro dígito: ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite o valor do segundo dígito: ");
+            y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite a letra: ");
+            posicao = Convert.ToChar(Console.ReadLine());
             do
             {
-                char posicao;
-                int x = 0, y = 0;
-
                 Console.Clear();
-                Console.WriteLine("--- Let's begin our exploration in Mars ---");
-                Console.WriteLine("Digite a posição inicial do nosso robô: \n Sendo dois dígitos e uma letra. \n Os dígitos são de 0 a 5. \n Cada letra representa um ponto cardeal: \n N - Norte.\n S - Sul. \n O - Oeste. \n L - Leste. \n");
-                Console.WriteLine("Digite o valor do primeiro dígito: ");
-                x = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Digite o valor do segundo dígito: ");
-                y = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Digite a letra: ");
-                posicao = Convert.ToChar(Console.ReadLine());
-
+                Console.WriteLine("A posição do seu robô é de " + x + y + posicao);
                 Console.WriteLine("Agora vamos digitar os comandos de exploração do nosso robô.");
                 Console.WriteLine("Sendo eles: \n");
                 Console.WriteLine("Caso deseje mudar a direção do robô:\n M - Mover. \n E - Virar 90º à esquerda. \n D - Virar 90º à direita.\n F - Se deseja finalizar a expedição. ");

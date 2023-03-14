@@ -12,7 +12,7 @@
 
                 Console.Clear();
                 Console.WriteLine("--- Let's begin our exploration in Mars ---");
-                Console.WriteLine("Digite a posição inicial do nosso robô: \n Sendo dois dígitos e uma letra. \n Os dígitos são de 0 a 5. \n Cada letra representa um ponto cardea: \n N - Norte.\n S - Sul. \n O - Oeste. \n L - Leste. \n");
+                Console.WriteLine("Digite a posição inicial do nosso robô: \n Sendo dois dígitos e uma letra. \n Os dígitos são de 0 a 5. \n Cada letra representa um ponto cardeal: \n N - Norte.\n S - Sul. \n O - Oeste. \n L - Leste. \n");
                 Console.WriteLine("Digite o valor do primeiro dígito: ");
                 x = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Digite o valor do segundo dígito: ");
